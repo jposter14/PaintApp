@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:id="@+id/main">
+
+    <com.example.jackieposter.paintapp.DrawView
+        android:id="@+id/drawing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+
+        />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/penMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/ic_create_white_24dp"
+        fab:menu_colorNormal="#000000"
+
+    >
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/penSmall"
+            android:src="@drawable/ic_small_dot"
+            app:fabSize="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#FFFFFF"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/penMedium"
+            android:src="@drawable/ic_medium_dot"
+            app:fabSize="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#FFFFFF"
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/penLarge"
+            android:src="@drawable/ic_large_dot"
+            app:fabSize="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#FFFFFF"
+
+            />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/colorMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|start"
+        android:layout_toRightOf="@+id/penMenu"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        fab:menu_icon="@drawable/ic_group_work_white_24dp"
+        fab:menu_fab_size="normal"
+        fab:menu_colorNormal="#000000"
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/redFab"
+            android:src="@drawable/ic_red_dot"
+            app:fabSize="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#FFFFFF"
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/orangeFab"
+            android:src="@drawable/ic_orange_dot"
+            app:fabSize="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#FFFFFF"
+
+
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/yellowFab"
+            android:src="@drawable/ic_yellow_dot"
+            app:fabSize="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#FFFFFF"
+
+
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/greenFab"
+            android:src="@drawable/ic_green_dot"
+            app:fabSize="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#FFFFFF"
+
+
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/blueFab"
+            android:src="@drawable/ic_blue_dot"
+            app:fabSize="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#FFFFFF"
+
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/purpleFab"
+            android:src="@drawable/ic_purple_dot"
+            app:fabSize="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#FFFFFF"
+
+            />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>
