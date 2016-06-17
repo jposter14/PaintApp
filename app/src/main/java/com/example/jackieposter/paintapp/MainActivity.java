@@ -56,6 +56,20 @@ public class MainActivity extends AppCompatActivity {
         drawView.setPenWidth(largeBrush);
     }
 
+    @OnClick(R.id.penLarger)
+    public void penLargerClicked() {
+        int largerBrush = getResources().getInteger(R.integer.larger_size);
+        drawView.setErase(false);
+        drawView.setPenWidth(largerBrush);
+    }
+
+    @OnClick(R.id.penLargest)
+    public void penLargestClicked() {
+        int largestBrush = getResources().getInteger(R.integer.largest_size);
+        drawView.setErase(false);
+        drawView.setPenWidth(largestBrush);
+    }
+
     @OnClick(R.id.redFab)
     public void onRedClicked(){
         drawView.setErase(false);

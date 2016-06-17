@@ -6,7 +6,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity"
-    android:id="@+id/main">
+    android:id="@+id/main"
+    >
 
     <com.example.jackieposter.paintapp.DrawView
         android:id="@+id/drawing"
@@ -28,10 +29,11 @@
         fab:menu_colorNormal="#000000"
 
     >
+
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/penSmall"
-            android:src="@drawable/ic_small_dot"
-            app:fabSize="normal"
+            android:src="@drawable/ic_smallest_dot"
+            fab:fab_size="mini"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             fab:fab_colorNormal="#FFFFFF"
@@ -39,8 +41,8 @@
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/penMedium"
-            android:src="@drawable/ic_medium_dot"
-            app:fabSize="normal"
+            android:src="@drawable/ic_small_dot"
+            fab:fab_size="mini"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             fab:fab_colorNormal="#FFFFFF"
@@ -49,8 +51,28 @@
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/penLarge"
+            android:src="@drawable/ic_medium_dot"
+            fab:fab_size="mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#FFFFFF"
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/penLarger"
             android:src="@drawable/ic_large_dot"
-            app:fabSize="normal"
+            fab:fab_size="mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#FFFFFF"
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/penLargest"
+            android:src="@drawable/ic_largest_dot"
+            fab:fab_size="mini"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             fab:fab_colorNormal="#FFFFFF"

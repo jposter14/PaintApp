@@ -4,11 +4,17 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <!--brush sizes-->
+    <dimen name="smaller_brush">3dp</dimen>
+    <integer name="smaller_size">3</integer>
     <dimen name="small_brush">10dp</dimen>
     <integer name="small_size">10</integer>
     <dimen name="medium_brush">20dp</dimen>
     <integer name="medium_size">20</integer>
     <dimen name="large_brush">30dp</dimen>
     <integer name="large_size">30</integer>
+    <dimen name="larger_brush">50dp</dimen>
+    <integer name="larger_size">50</integer>
+    <dimen name="largest_brush">70dp</dimen>
+    <integer name="largest_size">70</integer>
 
 </resources>
